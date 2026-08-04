@@ -557,10 +557,38 @@ font-size:16px;
 footer{
     border-top:1px solid rgba(255,255,255,.08);
     margin-top:80px;
-    padding:35px 8%;
+    padding:50px 8%;
     text-align:center;
     color:#888;
     font-size:14px;
+    background:#0d0d0d;
+}
+
+.footer-logo{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:18px;
+    border:2px solid #c8a23a;
+    box-shadow:0 0 20px rgba(200,162,58,.35);
+}
+
+footer h2{
+    color:#c8a23a;
+    font-size:34px;
+    margin-bottom:12px;
+    letter-spacing:3px;
+}
+
+footer p{
+    margin:10px 0;
+    color:#bdbdbd;
+}
+
+footer em{
+    color:#ffffff;
+    font-style:italic;
 }
 
 /* ==================================
