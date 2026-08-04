@@ -1,0 +1,407 @@
+/* ===========================
+   MUFSA LYRICIST
+   LUXURY THEME v1
+=========================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+/* Color Variables */
+
+:root{
+
+    --bg:#0B0B0B;
+    --bg2:#111111;
+
+    --gold:#C8A23A;
+    --gold-light:#e7c96b;
+
+    --text:#F5F5F5;
+    --gray:#b8b8b8;
+
+    --wine:#2B0B14;
+
+    --border:rgba(200,162,58,.18);
+
+}
+
+/* Body */
+
+body{
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(43,11,20,.55),
+    transparent 35%),
+
+    radial-gradient(circle at bottom left,
+    rgba(43,11,20,.35),
+    transparent 30%),
+
+    var(--bg);
+
+    color:var(--text);
+
+    font-family:'Inter',sans-serif;
+
+    line-height:1.8;
+
+    overflow-x:hidden;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--gold);
+
+    border-radius:20px;
+
+}
+
+/* Headings */
+
+h1,h2,h3,h4{
+
+    font-family:'Cinzel',serif;
+
+    letter-spacing:2px;
+
+    color:white;
+
+}
+
+/* Paragraph */
+
+p{
+
+    color:var(--gray);
+
+    font-size:16px;
+
+}
+
+/* Links */
+
+a{
+
+    text-decoration:none;
+
+    color:var(--gold);
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:var(--gold-light);
+
+}
+
+/* Images */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* Sections */
+
+section{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:90px 0;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 34px;
+
+    border:1px solid var(--gold);
+
+    color:white;
+
+    transition:.35s;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:13px;
+
+}
+
+.btn:hover{
+
+    background:var(--gold);
+
+    color:#000;
+
+    box-shadow:0 0 20px rgba(200,162,58,.35);
+
+}
+
+/* ===========================
+   PART 2
+   NAVBAR + HERO
+=========================== */
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(11,11,11,.88);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+    z-index:999;
+}
+
+/* Logo */
+
+.logo{
+    font-family:'Cinzel',serif;
+    font-size:28px;
+    color:var(--gold);
+    letter-spacing:3px;
+    font-weight:700;
+}
+
+/* Navigation */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    color:white;
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    transition:.35s;
+}
+
+nav ul li a:hover{
+    color:var(--gold);
+}
+
+/* Hero */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:120px 8% 80px;
+
+    position:relative;
+
+}
+
+/* Hero Background Glow */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle,
+    rgba(43,11,20,.45),
+    transparent 70%);
+
+    z-index:-1;
+
+}
+
+/* Hero Content */
+
+.hero-content{
+
+    max-width:900px;
+
+}
+
+.hero-content h1{
+
+    font-size:72px;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+    text-transform:uppercase;
+
+}
+
+.hero-content h1 span{
+
+    color:var(--gold);
+
+}
+
+.hero-content p{
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    font-size:18px;
+
+}
+
+/* Hero Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/* Glass Card */
+
+.glass{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:18px;
+
+    padding:30px;
+
+}
+
+/* Hover Animation */
+
+.glass:hover{
+
+    transform:translateY(-6px);
+
+    transition:.4s;
+
+    border-color:var(--gold);
+
+    box-shadow:0 0 35px rgba(200,162,58,.15);
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero-content h1{
+
+font-size:48px;
+
+}
+
+nav ul{
+
+gap:18px;
+
+}
+
+}
+
+@media(max-width:650px){
+
+header{
+
+padding:15px 5%;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+nav ul{
+
+gap:12px;
+
+}
+
+nav ul li a{
+
+font-size:12px;
+
+}
+
+.hero-content h1{
+
+font-size:38px;
+
+}
+
+.hero-content p{
+
+font-size:16px;
+
+}
+
+}
