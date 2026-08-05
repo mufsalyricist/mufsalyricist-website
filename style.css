@@ -569,14 +569,14 @@ footer{
     height:90px;
     border-radius:50%;
     object-fit:cover;
-    margin-bottom:18px;
+    display:block;
+    margin:0 auto 20px;
     border:2px solid #c8a23a;
     box-shadow:0 0 20px rgba(200,162,58,.35);
 }
-
 footer h2{
     color:#c8a23a;
-    font-size:34px;
+    font-size:28px;
     margin-bottom:12px;
     letter-spacing:3px;
 }
@@ -584,6 +584,7 @@ footer h2{
 footer p{
     margin:10px 0;
     color:#bdbdbd;
+    line-height:1.8;
 }
 
 footer em{
